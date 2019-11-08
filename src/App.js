@@ -11,7 +11,6 @@ function App() {
      <BrowserRouter>
       <Navbar/>
       <Cursos/>
-      <CursosContainer/>
      </BrowserRouter>
     </div>
   );

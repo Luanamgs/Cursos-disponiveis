@@ -2,18 +2,24 @@ import './CursosContainer.scss';
 import React from 'react';
 
 
-const CursosContainer = () => {
+const CursosContainer = ({ img, titulo, texto, botao }) => {
     return (
-        <div className="CursosContainer">
-                <div id="caixatexto">
-                <div className="texto"></div>
-                <div className="texto"></div>
-                </div>
-                
-                <div id="botao"><button></button></div>
+        <div className="CaixaCursos">
+
+            <div className="CursosD">
+                <img src={img} alt="" />
+                <h2>{titulo}</h2>
+                <p>{texto}</p>
+                <button>{botao}</button>
+
+                <div id="Risco"></div>
+
+            </div>
 
 
         </div>
+
+
     )
 }
 
