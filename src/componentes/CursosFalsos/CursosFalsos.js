@@ -1,8 +1,8 @@
-import './CursosContainer.scss';
+import './CursosFalsos.scss';
 import React from 'react';
 
 
-const CursosContainer = ({ img, titulo, texto, botao }) => {
+const CursosContainerF = ({ img, titulo, texto, embreve }) => {
     return (
         <div className="CaixaCursos">
 
@@ -10,7 +10,7 @@ const CursosContainer = ({ img, titulo, texto, botao }) => {
                 <img src={img} alt="" />
                 <h2>{titulo}</h2>
                 <p>{texto}</p>
-                <button div="clicavel">{botao}</button>
+                <div id="botaofalso" ><p>{embreve}</p></div>
 
                 <div id="Risco"></div>
 
@@ -23,4 +23,4 @@ const CursosContainer = ({ img, titulo, texto, botao }) => {
     )
 }
 
-export default CursosContainer;
+export default CursosContainerF;
